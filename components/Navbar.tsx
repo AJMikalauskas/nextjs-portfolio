@@ -51,7 +51,7 @@ const Navbar = () => {
     <div style={{ backgroundColor: `${navBg}` }} className={shadow ? "fixed w-full h-20 shadow-xl z-[100]" : "fixed w-full h-20 z-[100]"}>
         <div className='flex justify-between items-center w-full h-full px-6 2xl:px-16'>
             <Image src="/../public/assets/correctDimsLogo.png" alt="logo" width="125" height="50" />
-            <div>
+            <div></div>
                 <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
                     <Link to='main' smooth={false} duration={250} >
                         <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
