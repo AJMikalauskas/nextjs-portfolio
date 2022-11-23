@@ -1,9 +1,10 @@
+import ResumeIcon from "../public/assets/resume-icon.png"
 import Image from 'next/image'
 //import Link from 'next/link'
 import { Link } from "react-scroll";
 import React, { useEffect, useState } from 'react'
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai';
-import {FaGithub, FaLinkedinIn} from "react-icons/fa";
+import {FaGithub, FaLinkedin } from "react-icons/fa";
 import {BsFillPersonLinesFill} from "react-icons/bs";
 import { useRouter } from 'next/router';
 
@@ -114,19 +115,27 @@ const Navbar = () => {
                         <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105
                             ease-in duration-300'>
-                            <FaLinkedinIn />
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alexander-mikalauskas/">
+                                    <FaLinkedin/>
+                                 </a>
                             </div>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105
                             ease-in duration-300'>
-                            <FaGithub />
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/AJMikalauskas">
+                                    <FaGithub/>
+                                </a>
                             </div>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105
                             ease-in duration-300'>
-                            <AiOutlineMail />
+                                <a target="_blank" rel="noopener noreferrer"  href='mailto://ajmikalauskas@hotmail.com'>
+                                    <AiOutlineMail/>
+                                </a>
                             </div>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105
+                            <div className='rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer hover:scale-105
                             ease-in duration-300'>
-                            <BsFillPersonLinesFill />
+                                <a target="_blank" rel="noopener noreferrer" href="../public/assets/ATSResume-11-21-22.pdf" download>
+                                    <Image src={ResumeIcon} alt="resume-icon-img" width={25} height={25} />
+                                </a>
                             </div>
                         </div>
                     </div>

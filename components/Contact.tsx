@@ -7,6 +7,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import ResumeIcon from "../public/assets/resume-icon.png"
 
 const Contact = () => {
   return (
@@ -44,25 +45,33 @@ const Contact = () => {
                     className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105
                             ease-in duration-300"
                   >
-                    <FaLinkedin />
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alexander-mikalauskas/">
+                      <FaLinkedin/>
+                    </a>
                   </div>
                   <div
                     className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105
                             ease-in duration-300"
                   >
-                    <FaGithub />
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/AJMikalauskas">
+                      <FaGithub/>
+                    </a>
                   </div>
                   <div
                     className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105
                             ease-in duration-300"
                   >
-                    <AiOutlineMail />
+                    <a target="_blank" rel="noopener noreferrer"  href='mailto://ajmikalauskas@hotmail.com'>
+                      <AiOutlineMail/>
+                    </a>
                   </div>
                   <div
-                    className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105
+                    className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-105
                             ease-in duration-300"
                   >
-                    <BsPersonLinesFill />
+                    <a target="_blank" rel="noopener noreferrer" href="../public/assets/ATSResume-11-21-22.pdf" download>
+                      <Image src={ResumeIcon} alt="resume-icon-img" width={25} height={25} />
+                    </a>
                   </div>
                 </div>
               </div>
