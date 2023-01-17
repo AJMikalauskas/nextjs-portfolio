@@ -7,6 +7,7 @@ import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai';
 import {FaGithub, FaLinkedin } from "react-icons/fa";
 import {BsFillPersonLinesFill} from "react-icons/bs";
 import { useRouter } from 'next/router';
+import logo from "../public/assets/correctDimsLogo.png";
 
 const Navbar = () => {
     const [currentPage, setCurrentPage] = useState(true);
@@ -58,7 +59,7 @@ const Navbar = () => {
     // border-b-8 border-white?
     <div style={{ backgroundColor: `${navBg}` }} className={shadow ? "fixed w-full h-20 shadow-xl z-[100]" : "fixed w-full h-20 z-[100] "}>
         <div className='flex justify-between items-center w-full h-full px-6 2xl:px-16'>
-            <Image src="/../public/assets/correctDimsLogo.png" alt="logo" width="125" height="50" />
+            <Image src={logo} alt="logo" width="125" height="50" />
             <div className={currentPage ? '' : 'hidden'}>
                 <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
                     <Link to='main' smooth={false} duration={250} >
