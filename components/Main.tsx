@@ -15,7 +15,7 @@ const Main = () => {
             <div className='bg-[#000] p-12 rounded-lg'>
                 {/* text-gray-600 */}
                 {/* text-gray-700 */}
-                <h1 className='py-4 text-white'>Hi, I'm <span className='text-[#3b35e9]'>Xander</span></h1>
+                <h1 className='py-4 text-white'>Hi, I'm <span className='text-[#ff1516]'>Xander</span></h1>
                 <h1 className='py-2 text-white'> A Full Stack Web Developer</h1>
                 {/* text-gray-600 */}
                 <p className='uppercase text-sm tracking-widest py-4 m-auto text-white'>LETS BUILD SOMETHING TOGETHER</p>

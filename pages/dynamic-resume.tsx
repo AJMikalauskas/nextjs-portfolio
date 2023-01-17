@@ -21,7 +21,7 @@ const dynamicresume = () => {
 
         <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
           <div className='col-span-4 relative'>
-            <h2 className='pb-4 text-[#3b35e9]'>Overview</h2>
+            <h2 className='pb-4 text-[#ff1516]'>Overview</h2>
             <p>This full stack web app is a custom web application that shows different resumes formatted like top-level tech companies including Microsoft,
 Google, and Facebook; Each has its own unique design which were designed using Figma. On the main page there is also a newsletter signup that signs you up to a newsletter 
 using the Mailchimp API. </p>

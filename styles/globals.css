@@ -31,7 +31,7 @@ html {
   }
 
   button {
-    @apply shadow-lg shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white 
+    @apply shadow-lg shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#ff1516] to-[#df8282] text-white 
   }
 }
 .custom-img {

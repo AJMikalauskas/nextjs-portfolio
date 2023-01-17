@@ -21,7 +21,7 @@ const dynamicresume = () => {
 
         <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
           <div className='col-span-4 relative'>
-          <h2 className='pb-4 text-[#3b35e9]'>Overview</h2>
+          <h2 className='pb-4 text-[#ff1516]'>Overview</h2>
             <p>
               A Custom Web App that acts as a blog in which users can visit the articles posted. Though the full functionality isn't
               completed yet, it is going to include a way users can sign up and be handled via the Sanity CMS. All Blogs posts and users

@@ -8,7 +8,7 @@ const About = () => {
     <div id="about" className="w-full md:h-full items-center mt-8">
       <div className="max-w-[1240px] mx-auto md:grid grid-cols-3 gap-8 p-4">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#3b35e9]">About</p>
+          <p className="uppercase text-xl tracking-widest text-[#ff1516]">About</p>
           <h2 className="py-4">Who I Am</h2>
           {/* text-gray-600 */}
           <p className="py-2 text-white">// I am not your normal developer</p>

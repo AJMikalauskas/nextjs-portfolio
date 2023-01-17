@@ -22,7 +22,7 @@ const dynamicresume = () => {
         <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
           <div className='col-span-4 relative'>
             {/* <p>Project</p> */}
-            <h2 className='pb-4 text-[#3b35e9]'>Overview</h2>
+            <h2 className='pb-4 text-[#ff1516]'>Overview</h2>
             <p>This project is a custom web application that enables users to add crypto coins from a table to their watchlist with a fully functioning
 login system with login verification using JWTs. In more depth, the users sign up using reactive form validation and once signed up, the user is 
 added to the database which is MongoDB. Upon the user sucessfully logging in, they are granted both an access token and a refresh token. Which are the 

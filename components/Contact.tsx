@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <p className="text-xl tracking-widest uppercase text-[#ff1516]">
           Contact
         </p>
         <h2 className="py-4">Get In Touch</h2>
@@ -109,7 +109,7 @@ const Contact = () => {
         <div className="flex justify-center py-12">
             <Link to='main' smooth={true} duration={250}>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <HiOutlineChevronDoubleUp size={30} className="text-[#5651e5]" />
+                    <HiOutlineChevronDoubleUp size={30} className="text-[#ff1516]" />
                 </div>
             </Link>
         </div>
