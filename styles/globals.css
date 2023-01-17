@@ -10,7 +10,8 @@ html {
 /* Global styles */
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
+    /* -[#1f2937] */
+    @apply bg-[#000] text-[#fff] tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -30,6 +31,12 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white 
+    @apply shadow-lg shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white 
   }
+}
+.custom-img {
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url("../public/assets/main-bg.jpg");
+  /* opacity: 50%; */
+   background-repeat: no-repeat;
+   background-position: center;
 }

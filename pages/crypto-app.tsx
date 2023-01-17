@@ -20,42 +20,58 @@ const dynamicresume = () => {
         </div>
 
         <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
-          <div className='col-span-4'>
-            <p>Project</p>
-            <h2>Overview</h2>
-            <p>Project Description...</p>
-            <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-            <button className='px-8 py-2 mt-4 mr-8'>Code</button>
-            <button className='px-8 py-2 mt-4'>Home</button>
+          <div className='col-span-4 relative'>
+            {/* <p>Project</p> */}
+            <h2 className='pb-4 text-[#3b35e9]'>Overview</h2>
+            <p>This project is a custom web application that enables users to add crypto coins from a table to their watchlist with a fully functioning
+login system with login verification using JWTs. In more depth, the users sign up using reactive form validation and once signed up, the user is 
+added to the database which is MongoDB. Upon the user sucessfully logging in, they are granted both an access token and a refresh token. Which are the 
+tokens that handles the logic of JWTs using cookies</p>
+          <div className='absolute bottom-0'>
+            <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
+            <a target="_blank" rel="noopener noreferrer" href="https://crypto-app-v2.netlify.app/loggedOutHome">
+              Demo
+            </a>
+            </button>
+            <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
+              <a target="_blank" rel="noopener noreferrer" href="https://crypto-app-v2.netlify.app/loggedOutHome">
+              Code
+              </a> 
+            </button>
+            <button className='px-8 py-2 mt-4 hover:scale-105 ease-in duration-300'>
+             <Link href="/">Home</Link>
+            </button>
+          </div>
           </div>
           <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
             <div className='p-2'>
               <p className='text-center font-bold pb-2'>Technologies</p>
-              <div className='grid grid-cols-3 md:grid-cols-1'>
-                <p className='text-gray-600 py-2 flex items-center'>
+              <div className='grid grid-cols-3 md:grid-cols-1 text-white'>
+                {/* text-gray-600 */}
+                <p className='py-2 flex items-center'>
                   <RiRadioButtonFill className='pr-1'/> React
                 </p>
-                <p className='text-gray-600 py-2 flex items-center'>
+                <p className='py-2 flex items-center'>
                   <RiRadioButtonFill className='pr-1'/> Tailwind
                 </p>
-                <p className='text-gray-600 py-2 flex items-center'>
+                <p className='py-2 flex items-center'>
                   <RiRadioButtonFill className='pr-1'/> Javascript
                 </p>
-                <p className='text-gray-600 py-2 flex items-center'>
+                <p className='py-2 flex items-center'>
                   <RiRadioButtonFill className='pr-1'/> Azure
                 </p>
-                <p className='text-gray-600 py-2 flex items-center'>
+                <p className='py-2 flex items-center'>
                   <RiRadioButtonFill className='pr-1'/> MongoDB
                 </p>
-                <p className='text-gray-600 py-2 flex items-center'>
+                <p className='py-2 flex items-center'>
                   <RiRadioButtonFill className='pr-1'/> Express
                 </p>
               </div>
             </div>
           </div>
-          <Link href="/projects">
+          {/* <Link href="/projects">
             <p className='underline cursor-pointer'>Home</p>
-          </Link>
+          </Link> */}
         </div>
     </div>
   )

@@ -9,11 +9,15 @@ import {BsFillPersonLinesFill} from "react-icons/bs";
 import { useRouter } from 'next/router';
 
 const Navbar = () => {
+    const [currentPage, setCurrentPage] = useState(true);
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
-    const [navBg, setNavBg] = useState("#ecf0f3");
-    const [linkColor, setLinkColor] = useState("#1f2937");
+    //#000
+    const [navBg, setNavBg] = useState("transparent");
+    //#1f2937
+    const [linkColor, setLinkColor] = useState("#fff");
     const router = useRouter();
+    // console.log(window.location.href);
 
 
     // If project route is clicked on, change navbar coloring to transparent and setLinkColor/smooth scrolling to white
@@ -25,11 +29,13 @@ const Navbar = () => {
             router.asPath == "/medium-blog-mock" ||
             router.asPath == "/crypto-app" 
         ) {
+            setCurrentPage(false);
             setNavBg("transparent")
             setLinkColor("#f8f8f8")
         } else {
-            setNavBg("#ecf0f3");
-            setLinkColor("#1f2937");
+            setCurrentPage(true);
+            //setNavBg("#ecf0f3");
+           // setLinkColor("#1f2937");
         }
     }, [router])
 
@@ -49,10 +55,11 @@ const Navbar = () => {
     }, [])
 
   return (
-    <div style={{ backgroundColor: `${navBg}` }} className={shadow ? "fixed w-full h-20 shadow-xl z-[100]" : "fixed w-full h-20 z-[100]"}>
+    // border-b-8 border-white?
+    <div style={{ backgroundColor: `${navBg}` }} className={shadow ? "fixed w-full h-20 shadow-xl z-[100]" : "fixed w-full h-20 z-[100] "}>
         <div className='flex justify-between items-center w-full h-full px-6 2xl:px-16'>
             <Image src="/../public/assets/correctDimsLogo.png" alt="logo" width="125" height="50" />
-            <div>
+            <div className={currentPage ? '' : 'hidden'}>
                 <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
                     <Link to='main' smooth={false} duration={250} >
                         <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>

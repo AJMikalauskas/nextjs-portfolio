@@ -65,14 +65,6 @@ const Contact = () => {
                       <AiOutlineMail/>
                     </a>
                   </div>
-                  <div
-                    className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-105
-                            ease-in duration-300"
-                  >
-                    <a target="_blank" rel="noopener noreferrer" href="../public/assets/ATSResume-11-21-22.pdf" download>
-                      <Image src={ResumeIcon} alt="resume-icon-img" width={25} height={25} />
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
