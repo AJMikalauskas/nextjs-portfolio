@@ -1,5 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
+import reactSkill from "../public/assets/react.png";
+import javascriptSkill from "../public/assets/javascript.png";
+import htmlSkill from "../public/assets/html.png";
+import cssSkill from "../public/assets/css.png";
+import azureSkill from "../public/assets/azure.png";
+import mongoSkill from "../public/assets/mongo.png";
+import nodeSkill from "../public/assets/node.png";
+import tailwindSkill from "../public/assets/react.png";
+
 
 const Skills = () => {
   return (
@@ -13,7 +22,7 @@ const Skills = () => {
             <div className='p-6 shadow-xl shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src="/../public/assets/react.png" alt="react-skill" width="64" height="64" />
+                        <Image src={reactSkill} alt="react-skill" width="64" height="64" />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                             <h3>React</h3>
@@ -24,7 +33,7 @@ const Skills = () => {
             <div className='p-6 shadow-xl shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src="/../public/assets/javascript.png" alt="javascript-skill" width="64" height="64" />
+                        <Image src={javascriptSkill} alt="javascript-skill" width="64" height="64" />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>Javascript</h3>
@@ -35,7 +44,7 @@ const Skills = () => {
             <div className='p-6 shadow-xl shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src="/../public/assets/html.png" alt="html-skill" width="64" height="64" />
+                        <Image src={htmlSkill} alt="html-skill" width="64" height="64" />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>HTML</h3>
@@ -46,7 +55,7 @@ const Skills = () => {
             <div className='p-6 shadow-xl shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src="/../public/assets/css.png" alt="css-skill" width="64" height="64" />
+                        <Image src={cssSkill} alt="css-skill" width="64" height="64" />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>CSS</h3>
@@ -57,7 +66,7 @@ const Skills = () => {
             <div className='p-6 shadow-xl shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src="/../public/assets/azure.png" alt="azure-skill" width="64" height="64" />
+                        <Image src={azureSkill} alt="azure-skill" width="64" height="64" />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>Azure</h3>
@@ -68,7 +77,7 @@ const Skills = () => {
              <div className='p-6 shadow-xl shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src="/../public/assets/mongo.png" alt="mongo-skill" width="64" height="64" />
+                        <Image src={mongoSkill} alt="mongo-skill" width="64" height="64" />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>MongoDB</h3>
@@ -79,7 +88,7 @@ const Skills = () => {
              <div className='p-6 shadow-xl shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src="/../public/assets/node.png" alt="nodejs-skill" width="64" height="64" />
+                        <Image src={nodeSkill} alt="nodejs-skill" width="64" height="64" />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>Node JS</h3>
@@ -90,7 +99,7 @@ const Skills = () => {
              <div className='p-6 shadow-xl shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src="/../public/assets/tailwind.png" alt="tailwind-skill" width="64" height="64" />
+                        <Image src={tailwindSkill} alt="tailwind-skill" width="64" height="64" />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
                         <h3>Tailwind</h3>
