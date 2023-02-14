@@ -64,31 +64,31 @@ const Contact = () => {
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
 
-                <form >
-                    <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+                <form method="POST" action="https://getform.io/f/7a1b4c30-8180-442b-bbd1-959005943d6a">
+                    {/* <div className="grid md:grid-cols-1 gap-4 w-full py-2"> */}
                         
                         {/* Name Field */}
-                        <div className="flex flex-col">
+                        <div className="flex flex-col py-2">
                             <label className="uppercase text-sm py-2" htmlFor="">Name</label>
-                            <input className="border-2 rounded-lg p-3 flex border-gray-300" type="text" name="" id="" />
+                            <input className="border-2 rounded-lg p-3 flex border-gray-300 text-black" name="name" type="text" id="" />
                         </div>
                        
                        {/* Phone Number Field */}
-                       <div className="flex flex-col">
+                       {/* <div className="flex flex-col">
                             <label className="uppercase text-sm py-2" htmlFor="">Phone Number</label>
-                            <input className="border-2 rounded-lg p-3 flex border-gray-300" type="text" name="" id="" />
-                        </div>
-                    </div>
+                            <input className="border-2 rounded-lg p-3 flex border-gray-300 text-black" name="phone" type="text" name="" id="" />
+                        </div> */}
+                    {/* </div> */}
                         {/* Subject Field */}
                         <div className="flex flex-col py-2">
-                            <label className="uppercase text-sm py-2" htmlFor="">Subject</label>
-                            <input className="border-2 rounded-lg p-3 flex border-gray-300" type="email" name="" id="" />
+                            <label className="uppercase text-sm py-2" htmlFor="">Email</label>
+                            <input className="border-2 rounded-lg p-3 flex border-gray-300 text-black" name="email" type="email" id="" />
                         </div>
                         
                         {/* Message Field */}
                         <div className="flex flex-col py-2">
                             <label className="uppercase text-sm py-2" htmlFor="">Message</label>
-                            <textarea className="border-2 rounded-lg p-3 flex border-gray-300" rows={10} />
+                            <textarea className="border-2 rounded-lg p-3 flex border-gray-300 text-black" name="message" rows={10} />
                         </div>
 
                         {/* Submit Button */}
