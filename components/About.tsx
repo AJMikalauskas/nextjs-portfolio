@@ -21,11 +21,11 @@ const About = () => {
           <p className="py-2 text-white">
           As a software engineer I'm actively seeking meaningful work where I feel I'm making an impact. 
           Ultimately I would like to engage in work that positively impacts our society. 
-          Some of my experience includes some freelancing where I've specialized in <strong>ReactJS, C#, and Solidity</strong>.
+          Some of my experience includes some freelancing where I've specialized in <strong>React, Angular, and C#</strong>.
           </p>
           {/* Link to projects */}
               {/* Should I link to dynamic resume project or just keep like a download */}
-              <a target="_blank" rel="noopener noreferrer" href="../public/assets/UpdatedResume-1-10-23.pdf" download> 
+              <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1OXHbNcN0QAUzNHXHcQyXchmKqi0MYo6cGjQ5xJ5ZKeM/edit?usp=sharing" > 
                 <h2 className="pt-12 text-white underline cursor-pointer text-center">
                     Check Out My Resume Here
                 </h2>

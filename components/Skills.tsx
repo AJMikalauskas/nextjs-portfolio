@@ -7,7 +7,9 @@ import cssSkill from "../public/assets/css.png";
 import azureSkill from "../public/assets/azure.png";
 import mongoSkill from "../public/assets/mongo.png";
 import nodeSkill from "../public/assets/node.png";
-import tailwindSkill from "../public/assets/react.png";
+import tailwindSkill from "../public/assets/tailwind.png";
+import angularSkill from "../public/assets/angularicon.png";
+import cSharpSkill from "../public/assets/c-sharp-icon.png";
 
 
 const Skills = () => {
@@ -29,14 +31,14 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            {/* Javascript */}
+            {/* Angular */}
             <div className='p-6 shadow-xl shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src={javascriptSkill} alt="javascript-skill" width="64" height="64" />
+                        <Image src={angularSkill} alt="angular-skill" width="64" height="64" />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>Javascript</h3>
+                        <h3>Angular</h3>
                     </div>
                 </div>
             </div>
@@ -66,10 +68,10 @@ const Skills = () => {
             <div className='p-6 shadow-xl shadow-gray-400 rounded-xl hover:scale-105 ease-in duration-300'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src={azureSkill} alt="azure-skill" width="64" height="64" />
+                        <Image src={cSharpSkill} alt="azure-skill" width="64" height="64" />
                     </div>
                     <div className='flex flex-col items-center justify-center'>
-                        <h3>Azure</h3>
+                        <h3>C Sharp</h3>
                     </div>
                 </div>
             </div>

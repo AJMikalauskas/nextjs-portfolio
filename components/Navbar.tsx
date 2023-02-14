@@ -1,6 +1,5 @@
 import ResumeIcon from "../public/assets/resume-icon.png"
 import Image from 'next/image'
-//import Link from 'next/link'
 import { Link } from "react-scroll";
 import React, { useEffect, useState } from 'react'
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai';
