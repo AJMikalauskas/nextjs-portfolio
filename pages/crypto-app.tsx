@@ -14,8 +14,8 @@ const dynamicresume = () => {
           alt="crypto-app-project" />
           <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] 
           translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-            <h2 className='py-2'>Crypto App(Robinhood Mock)</h2>
-            <h3>React JS / Tailwind / Firebase</h3>
+            <h2 className='py-2'>Crypto App(MERN Stack)</h2>
+            <h3>React JS / Tailwind + Material UI / Node JS / MongoDB / JWTs</h3>
           </div>
         </div>
 
@@ -28,19 +28,21 @@ login system with login verification using JWTs. In more depth, the users sign u
 added to the database which is MongoDB. Upon the user sucessfully logging in, they are granted both an access token and a refresh token. Which are the 
 tokens that handles the logic of JWTs using cookies</p>
           <div className='absolute bottom-0'>
-            <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
             <a target="_blank" rel="noopener noreferrer" href="https://crypto-app-v2.netlify.app/loggedOutHome">
+              <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
               Demo
+              </button>
             </a>
-            </button>
-            <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
-              <a target="_blank" rel="noopener noreferrer" href="https://crypto-app-v2.netlify.app/loggedOutHome">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/AJMikalauskas/full-stack-crypto-app-v2">
+              <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
               Code
-              </a> 
-            </button>
-            <button className='px-8 py-2 mt-4 hover:scale-105 ease-in duration-300'>
-             <Link href="/">Home</Link>
-            </button>
+              </button>
+            </a> 
+            <Link href="/">
+              <button className='px-8 py-2 mt-4 hover:scale-105 ease-in duration-300'>
+                Home
+              </button>
+            </Link>
           </div>
           </div>
           <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>

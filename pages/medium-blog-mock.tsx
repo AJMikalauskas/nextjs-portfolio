@@ -15,7 +15,7 @@ const dynamicresume = () => {
           <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] 
           translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
             <h2 className='py-2'>Medium Blog Mock</h2>
-            <h3>React JS / Next JS / Firebase</h3>
+            <h3>React JS / Next JS / Sanity CMS / Tailwind CSS </h3>
           </div>
         </div>
 
@@ -29,19 +29,21 @@ const dynamicresume = () => {
                Regeneration(ISR) which come from NextJS.
             </p>
             <div className='absolute bottom-0'>
-            <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
-                <a target="_blank" rel="noopener noreferrer" href="https://medium-clone-xi-swart.vercel.app/">
+              <a target="_blank" rel="noopener noreferrer" href="https://medium-clone-xi-swart.vercel.app/">
+                <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
                   Demo
-                </a>
-              </button>
-              <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/AJMikalauskas/medium-clone">
-                Code
+                </button>
               </a>
-              </button>
-              <button className='px-8 py-2 mt-4 hover:scale-105 ease-in duration-300'>
-                <Link href="/">Home</Link>
-              </button>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/AJMikalauskas/medium-clone">
+                <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
+                  Code
+                </button>
+              </a>
+              <Link href="/">
+                <button className='px-8 py-2 mt-4 hover:scale-105 ease-in duration-300'>
+                  Home
+                </button>
+              </Link>
             </div>
           </div>
           <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>

@@ -12,25 +12,25 @@ import Project from './Project'
 const projectsData = [
     {
         projectUrl: "dynamic-resume",
-        techStack: "React JS",
+        techStack: "React JS, Azure Cosmos DB, NextJS, APIs",
         projectName: "Dynamic Resume",
         image: DynamicResumeImg,
     },
     {
         projectUrl: "crypto-app",
-        techStack: "React JS",
-        projectName: "Crypto App",
+        techStack: "React JS, Node JS, MongoDB, JWTs, Tailwind + Material UI",
+        projectName: "Crypto App (MERN)",
         image: CryptoAppImg,
     },
     {
         projectUrl: "medium-blog-mock",
-        techStack: "React JS, Next JS",
+        techStack: "React JS, Next JS, Sanity CMS, Tailwind CSS",
         projectName: "Medium Blog Mock",
         image: MediumBlogMockImg,
     },
     {
         projectUrl: "google-maps-travel-advisor",
-        techStack: "React JS",
+        techStack: "React JS, APIs",
         projectName: "Google Maps Travel Advisor",
         image: GoogleMapsFiltererImg,
     },

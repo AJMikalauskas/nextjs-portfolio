@@ -15,7 +15,7 @@ const dynamicresume = () => {
           <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] 
           translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
             <h2 className='py-2'>Dynamic Resume</h2>
-            <h3>React JS / Tailwind / Firebase</h3>
+            <h3>React JS / Tailwind / Azure Cosmos DB / NextJS / APIs</h3>
           </div>
         </div>
 
@@ -26,19 +26,21 @@ const dynamicresume = () => {
 Google, and Facebook; Each has its own unique design which were designed using Figma. On the main page there is also a newsletter signup that signs you up to a newsletter 
 using the Mailchimp API. </p>
             <div className='absolute bottom-0'>
-              <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
-                <a target="_blank" rel="noopener noreferrer" href="https://next-js-dynamic-resume.vercel.app/">
+              <a target="_blank" rel="noopener noreferrer" href="https://next-js-dynamic-resume.vercel.app/">
+                <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
                   Demo
-                </a>
-              </button>
-              <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/AJMikalauskas/Next-JS-Dynamic-Resume">
-                Code
+                </button>
               </a>
-              </button>
-              <button className='px-8 py-2 mt-4 hover:scale-105 ease-in duration-300'>
-                <Link href="/">Home</Link>
-              </button>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/AJMikalauskas/Next-JS-Dynamic-Resume">
+                <button className='px-8 py-2 mt-4 mr-8 hover:scale-105 ease-in duration-300'>
+                Code
+                </button>
+              </a>
+              <Link href="/">
+                <button className='px-8 py-2 mt-4 hover:scale-105 ease-in duration-300'>
+                  Home
+                </button>
+              </Link>
             </div>
           </div>
           <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
