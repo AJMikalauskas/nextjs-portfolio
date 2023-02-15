@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Link } from "react-scroll";
 import professionalPicOfMe from "../public/assets/linkedinprofile.jpg";
@@ -32,12 +32,16 @@ const Contact = () => {
 //     message: message
 //   })
 //   }
-const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+const [isCollapsibleImg, setCollapsibleImg] = useState(window.innerWidth >= 1024);
+
 const resizeListener = () => {
-  setWindowWidth(window.innerWidth);
-  console.log(window.innerWidth);
+  setCollapsibleImg(window.innerWidth >= 1024);
 };
-window.addEventListener("resize", resizeListener);
+
+useEffect(() => {
+  window.addEventListener("resize", resizeListener);
+  return ()=> window.removeEventListener("resize", resizeListener);
+})
 
 
   return (
@@ -55,7 +59,7 @@ window.addEventListener("resize", resizeListener);
             <div className="lg:p-4 h-full">
               <div>
                 {/* Can put a dummy image here or picture of me */}
-                {windowWidth >= 1024 && <Image
+                {isCollapsibleImg && <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src={professionalPicOfMe}
                   alt="contact-img"
