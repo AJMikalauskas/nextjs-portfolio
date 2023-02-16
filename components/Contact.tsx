@@ -32,15 +32,21 @@ const Contact = () => {
 //     message: message
 //   })
 //   }
-const [isCollapsibleImg, setCollapsibleImg] = useState(window.innerWidth >= 1024);
+const [isCollapsibleImg, setCollapsibleImg] = useState<boolean>();
 
-const resizeListener = () => {
-  setCollapsibleImg(window.innerWidth >= 1024);
-};
+// const resizeListener = () => {
+//   setCollapsibleImg(window.innerWidth >= 1024);
+// };
 
 useEffect(() => {
-  window.addEventListener("resize", resizeListener);
-  return ()=> window.removeEventListener("resize", resizeListener);
+
+  setCollapsibleImg(globalThis.window.innerWidth >= 1024)
+  const resizeListener = () => {
+    setCollapsibleImg(globalThis.window.innerWidth >= 1024);
+  };
+
+  globalThis.window.addEventListener("resize", resizeListener);
+  return ()=> globalThis.window.removeEventListener("resize", resizeListener);
 })
 
 
